@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" style = "background-color: grey;">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3 class="ahmedcourses">
+                    ahmed courses
+                </h3>
+                <form class="form-inline">
+                    
+                    <div class="form-group mx-sm-3 mb-2">
+                      <label for="inputPassword2" class="sr-only">courses</label>
+                      <input required type="course" class="form-control" id="course" placeholder="add a course">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Confirm </button>
+                  </form>
+
+                  <ul class = "list-group mt2">
+                     
+                  </ul>
+            </div>
+            <div class="col-md-4" style = "background-color: grey;">
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDBNQ5ixM6SHKcGq7hXaGIGu5Z4SlVJOto",
+        authDomain: "js-project-fe382.firebaseapp.com",
+        databaseURL: "https://js-project-fe382.firebaseio.com",
+        projectId: "js-project-fe382",
+        storageBucket: "js-project-fe382.appspot.com",
+        messagingSenderId: "481128952809",
+        appId: "1:481128952809:web:858fdc02376bd4acc8d178"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let db = firebase.firestore();
+    </script>
+</body>
+</html>
